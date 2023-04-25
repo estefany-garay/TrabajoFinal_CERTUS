@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos - GRACIAtortasypastelitos</title>
+    <!-- HOJA D ESTILO PERSONALIZADA -->
+    <link rel="stylesheet" href="CSS/custom.css">
+
+    <!-- ESTILO DE BOOTSTRAP -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+</head>
+
+<body>
+    <!-- WHATSAPP INICIAR CONVERSACION -->
+    <a target="_blank" href="https://wa.me/51973066470?text=Hola%20deseo%20hacer%20mi%20pedido!! "><img
+            id="chatWhatsapp" src="IMG-RECURSOS/whatsapp-rosado.png" alt="iniciar conversacion por whatsapp"></a>
+
+    <!-- ENCABEZADO -->
+    <header class="text-center bg-dark text-white p-3">
+        <h1> Gracia Tortas y Pastelitos</h1>
+    </header>
+    <!-- SEPARACION -->
+    <div id="Barra"> </div>
+
+    <!-- BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="PaginaPrincipal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-success" type="submit">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--cuerpo-->
+    <main class="container bg-secondary-subtle ">
+        <div class="row">
+            <!-- datos de contacto -->
+            <section id="ubicanos" class="col-xs-12 col-sm-12 col-md-6 col-lg-7 py-5 px-3">
+                <img src="IMG-RECURSOS/reloj.png" alt="hora" width="80px"> <br>
+                <p> Horario: <br>
+                    Lunes a viernes: 8am a 5pm<br>
+                    Sábados: 8am a 4pm<br>
+                    Domingos: No hay atención
+                </p>
+                <img src="IMG-RECURSOS/telefono.png" alt="telef" width="80px"> <br>
+                <p>
+                    Telefono: 947 586 924 / 973 066 470
+                </P>
+                <img src="IMG-RECURSOS/ubicacion.png" alt="ubi" width="80px"> <br>
+                <p> Av.Independencia Mz "N" Lt "15" <br>
+                    PUENTE PIEDRA - LIMA - PERU
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.785766006482!2d-77.0818918742408!3d-11.912542466226949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1a1ac950aa1%3A0x8c11f38e60645f7e!2sShangri-la%2C%20Puente%20Piedra!5e0!3m2!1ses!2spe!4v1680904621145!5m2!1ses!2spe"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </section>
+
+            <!--formulario de contacto-->
+            <section id="formContacto" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 py-5 px-3">
+                <p id="logo"> <img src="IMG-RECURSOS/LOGO.jpg" alt="logo" width="200px"> </p>
+                <form action="ContactoRegistro.html" method="post">
+                    <p class="mb-3">
+                        <label for="txtNombre" class="form-label"> Escriba su nombre:</label>
+                        <input class="form-control" type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+                    </p>
+                    <p class="mb-3">
+                        <label for="txtApellidos" class="form-label"> Escriba sus apellidos:</label>
+                        <input class="form-control"  type="text" name="txtApellidos" id="txtApellidos" maxlength="50" required>
+                    </p>
+                    <p class="mb-3">
+                        <label for="txtCorreo" class="form-label"> Escriba su correo:</label>
+                        <input class="form-control"  type="email" name="txtCorreo" id="txtCorreo" maxlength="128" required>
+                    </p>
+                    <p class="mb-3">
+                        <label for="txtTelefono"class="form-label"> Escriba su telefono:</label>
+                        <input class="form-control"  type="tel" name="txtTelefono" id="txtTelefono" minlength="8" maxlength="13" required>
+                    </p>
+                    <p class="mb-3">
+                        <label for="optAsunto" class="form-label"> Asunto:</label>
+                        <select name="optAsunto" id="optAsunto" required>
+                            <option value> Seleccione una opcion...</option>
+                            <option value="oferta_empleo"> Oferta de empleo</option>
+                            <option value="Pedido de tortas">Pedido de tortas</option>
+                            <option value="Pack Tematicos"> Pack Tematicos</option>
+                        </select>
+                    </p>
+                    <p class="mb-3">
+                        <label for="textCuerpo" class="form-label">Detalle su pedido:</label>
+                        <br>
+                        <textarea name="textCuerpo" id="textCuerpo" cols="30" rows="10" required></textarea>
+                    </p>
+                    <p class="mb-3">
+                        <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                        <label for="bolAutorizo">Autorizo el envio de mi pedido.</label>
+                    </p>
+                    <p class="mb-3">
+                        <input class="form-control" type="submit" value="Enviar">
+                    </p>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

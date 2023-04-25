@@ -1,0 +1,62 @@
+/* importo fuente de google */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+#chatWhatsapp {
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* header*/
+header{
+    background-image: url(../IMG-RECURSOS/fondo4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header > h1{
+    color: #ff0cc2;
+    text-shadow: #ffffff 3px 3px;
+    font-family:"Pacifico", sans-serif;
+    padding: 20px 0px 20px 0px;
+    font-size: 4em;
+    margin: 0px;
+    text-align: center;
+}
+
+/* carrito */
+#carritoVacio{
+    width: 60%;
+}
+#ventanaCarrito  span, #ventanaCarrito  p {
+   font-size: 1em;
+}
+
+#ventanaCarrito  .descuento, #ventanaCarrito  .precioFinal{
+    font-size: 1.5 em;
+    text-align: right;
+ }
+/* articulo*/
+article{
+    margin-bottom: 2em;
+}
+picture > img{
+    margin-bottom:1em ;
+}
+/* precio */
+.precioOriginal{
+    font-size: 1.5em;
+    color: #696969;
+    text-decoration: line-through;
+}
+.descuento{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.precioFinal{
+    font-size: 2.0em;
+    color: rgb(255, 4, 213);
+    font-weight: bold;
+}

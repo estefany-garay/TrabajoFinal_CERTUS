@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo productos - GRACIAtortasypastelitos</title>
+    <!-- HOJA D ESTILO PERSONALIZADA -->
+    <link rel="stylesheet" href="CSS/custom.css">
+
+    <!-- ESTILO DE BOOTSTRAP -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    
+    <!-- ESTILO DE ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- WHATSAPP INICIAR CONVERSACION -->
+    <a target="_blank" href="https://wa.me/51973066470?text=Hola%20deseo%20hacer%20mi%20pedido!! "><img
+            id="chatWhatsapp" src="IMG-RECURSOS/whatsapp-rosado.png" alt="iniciar conversacion por whatsapp"></a>
+
+    <!-- ENCABEZADO -->
+    <header class="text-center bg-dark text-white p-3">
+        <h1> Gracia Tortas y Pastelitos</h1>
+    </header>
+    <!-- SEPARACION -->
+    <div id="Barra"> </div>
+
+    <!-- BARRA DE NAVEGACION-->
+
+    <nav class="navbar navbar-expand-lg bg-body-info bg-info-subtle" data-bs-theme="info">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="PaginaPrincipal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-success" data-bs-toggle="modal"
+                     data-bs-target="#ventanaCarrito" ><i class="bi bi-cart-fill"></i> Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <!-- ventana modal de carrito-->
+    <div class="modal fade" id="ventanaCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <picture>
+                    <img id="carritoVacio" class="img-fluid mx-auto d-block" src="IMG-RECURSOS/carrito vacio.png" alt="carritoVacio">
+                </picture>
+              <p class="text-center" >Actuamente usted no cuenta con ningun producto.</p>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" ><i class="bi bi-stars"></i> Limpiar</button>
+              <button type="button" class="btn btn-primary"><i class="bi bi-cart-check"></i> Cotizar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- contenedor principal-->
+    <main class="container text-center bg-secondary-subtle ">
+        <!-- seccion de contenido-->
+        <section id="catalogo" class="row py-5">
+
+            <!-- productos-->
+
+            <!-- produto 1-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de Fondant con Isomalt.jpg"
+                        alt="Torta de isonmalt" width="200px" height="200px">
+                </picture>
+                <h4>Torta de Fondant con Isomalt</h4>
+                    <p> <span class="precioFinal">s/ 150.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 2-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de Chantilly con Flores.jpg" alt="Torta de flores"
+                        width="200px" height="200px">
+                </picture>
+                <h4>Torta de Chantilly con Flores</h4>
+                    <p> <span class="precioFinal">s/ 80.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 3-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Pack Tematico Vaca Lola.jpg" alt="Pack tematico"
+                        width="200px" height="200px">
+                </picture>
+                <h4>Pack Tematico Vaca Lola</h4>
+                    <p> <span class="precioFinal">s/ 200.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 4-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de Modelado en Fondat.jpg" width="200px"
+                        height="200px" alt="Torta modelado de fondant">
+                </picture>
+                <h4>Torta de Modelado en Fondat</h4>
+                    <p> <span class="precioFinal">s/ 175.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 5-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product"
+                        src="IMG-PRODUCTOS/Torta de Chantilly con chorreado de chocolate y macarrons.jpg" width="200px"
+                        height="200px" alt="Torta de macarrons">
+                </picture>
+                <h4>Torta de Chantilly con chorreado de chocolate</h4>
+                    <p><span class="precioOriginal">s/ 90.00</span> <span class="descuento">-20% </span>
+                        <br><span class="precioFinal">s/ 72.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 6-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de Fondat de dos pisos.jpg" width="200px"
+                        height="200px" alt="Torta de dos pisos">
+                </picture>
+                <h4>Torta de Fondat de dos pisos</h4>
+                    <p><span class="precioOriginal">s/ 250.00</span> <span class="descuento">-30% </span>
+                        <br><span class="precioFinal">s/ 175.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)"  class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 7-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta Unicornio de Fondat y Chantilly.jpg" width="200px"
+                        height="200px" alt="Torta unicornio">
+                </picture>
+                <h4>Torta Unicornio de Fondat y Chantilly</h4>
+                    <p> <span class="precioOriginal">s/ 200.00</span> <span class="descuento">-50%</span>
+                        <br><span class="precioFinal">s/ 100.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+            <!-- produto 8-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de chantilly con Fom de mariposas.jpg"
+                        width="200px" height="200px" alt="Torta de fom">
+                </picture>
+                <h4>Torta de chantilly con Fom de mariposas</h4>
+                    <p><span class="precioOriginal">s/ 75.00</span> <span class="descuento">-15% </span>
+                        <br><span class="precioFinal">s/ 63.75</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+            <!-- produto 9-->
+            <article class="col-xs-12-sm-6 col-md-4 cold-xl-3">
+                <picture>
+                    <img class="img-product" src="IMG-PRODUCTOS/Torta de Graduacion.jpg" width="200px" height="200px"
+                        alt="Torta de Graduacion">
+                </picture>
+                <h4>Torta de chantilly de Graduacion</h4>
+                    <p><span class="precioOriginal">s/ 80.00</span> <span class="descuento">-10% </span>
+                        <br><span class="precioFinal">s/ 72.00</span>
+                    </p>
+                    <button onclick="addCarrito(event)" class="btn btn-light"><i class="bi bi-patch-plus-fill"></i> Agregar al carrito</button>
+            </article>
+
+        </section>
+
+    </main>
+    <footer class="container-fluid bg-dark text-white p-5">
+        <div class="container p-0">
+            <p class="float-end"> <a href="">Volver arriba</a> </p>
+            <p>Creado por Estefany Garay - 2023 </p>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript de Boostrap-->
+    <script src="js/bootstrap.js"></script>
+   <!-- JavaScript personalizado-->
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
